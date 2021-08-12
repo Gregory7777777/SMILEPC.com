@@ -5,6 +5,7 @@ body {
   background-color: #111;
 }
 
+
 /*=== DECORATIONS ===*/
 .decoration_left {
   z-index: -1;
@@ -25,12 +26,10 @@ body {
   animation: rotate_hue 20s infinite;
 }
 
-.decoration_right img {
-}
-
 
 /*=== HEADER ===*/
 header {
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -68,60 +67,17 @@ header {
 	background: #222; 
 }
 
+
 /*=== MAIN ===*/
+
+/*General styles*/
 .main {
 	color: white;
-}
-
-.page1 {
-	display: flex;
-	justify-content: space-between;
-	width: 1400px;
-	margin: 0 auto;
-  margin-top: 120px;
-}
-
-.page2 {
-	display: flex;
-  flex-direction: row-reverse;
-	justify-content: space-between;
-	width: 1400px;
-	margin: 0 auto;
-  margin-top: 200px;
-}
-
-.page3 {
-	display: flex;
-	justify-content: space-between;
-	width: 1400px;
-	margin: 0 auto;
-  margin-top: 200px;
-}
-
-.fan_animation {
-  height: 500px;
-  width: 500px;
-  animation: left_to_right 1s;
-}
-
-.fan_frame {
-  position: absolute;
-  width: 500px;
-  transform: translateX(4px) translateY(6px);
-}
-
-.fan {
-  width: 500px;
-  animation: rotate_image 2s infinite linear;
 }
 
 .text_block {
 	width: 620px;	
   animation: left_to_right 1s;
-}
-
-.page2 .text_block {
-  animation: right_to_left 1s;
 }
 
 .text_title {
@@ -133,6 +89,21 @@ header {
 	font-size: 20px;
 	width: 400px; 
 	margin-bottom: 40px;
+}
+
+/*Page 1*/
+.page1 {
+	display: flex;
+	justify-content: space-between;
+	width: 1400px;
+	margin: 0 auto;
+  margin-top: 120px;
+}
+
+.video {
+	width: 800px;
+	border-radius: 20px;
+  animation: right_to_left 1s;
 }
 
 .order_button {
@@ -152,8 +123,44 @@ header {
 	background: #8B0202; 
 }
 
-.video {
-	width: 800px;
-	border-radius: 20px;
+/*Page 2*/
+.page2 {
+	display: flex;
+  flex-direction: row-reverse;
+	justify-content: space-between;
+	width: 1400px;
+	margin: 0 auto;
+  margin-top: 200px;
+}
+
+.page2 .text_block {
   animation: right_to_left 1s;
 }
+
+.fan_animation {
+  height: 500px;
+  width: 500px;
+  animation: left_to_right 1s;
+}
+
+.fan_frame {
+  position: absolute;
+  width: 500px;
+  transform: translateX(4px) translateY(6px);
+}
+
+.fan {
+  width: 500px;
+  animation: rotate_image 3s infinite linear;
+}
+
+/*Page 3*/
+.page3 {
+	display: flex;
+	justify-content: space-between;
+	width: 1400px;
+	margin: 0 auto;
+  margin-top: 200px;
+}
+
+
