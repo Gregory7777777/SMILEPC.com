@@ -145,13 +145,22 @@ header {
 
 .fan_frame {
   position: absolute;
-  width: 500px;
   transform: translateX(4px) translateY(6px);
+  animation: rotate_hue 15s infinite;
 }
 
 .fan {
-  width: 500px;
+  position: relative;
+  left: 60px;
+  top: 60px;
   animation: rotate_image 3s infinite linear;
+}
+
+.fan_light {
+  position: relative;
+  animation: rotate_hue 15s infinite;
+  bottom: 226px;
+  left: 168px;
 }
 
 /*Page 3*/
