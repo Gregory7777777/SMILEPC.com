@@ -137,6 +137,10 @@ header {
   animation: right_to_left 1s;
 }
 
+.page2 .text_body {
+  width: 500px;
+}
+
 .fan_animation {
   height: 500px;
   width: 500px;
@@ -171,5 +175,3 @@ header {
 	margin: 0 auto;
   margin-top: 200px;
 }
-
-
