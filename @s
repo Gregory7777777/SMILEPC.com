@@ -36,9 +36,8 @@ body {
   }
 }
 
-
 /*=== HEADER ===*/
-.desktop_header {
+header {
   z-index: 1;
   position: fixed;
   top: 0;
@@ -48,13 +47,9 @@ body {
 	background-color: #000;
 }
 
-.mobile_header {
-  display: none;
-}
-
 .header-container {
   display: flex;
-  max-width: 1400px;
+  width: 1400px;
   margin: 0 auto;
 }
 
@@ -81,15 +76,6 @@ body {
 	background: #222; 
 }
 
-@media only screen and (max-width: 900px) {
-  .desktop_header {
-    display: none;
-  }
-  .mobile_header {
-    display: block;
-  }
-}
-
 
 /*=== MAIN ===*/
 
@@ -110,34 +96,20 @@ body {
 
 .text_body {
 	font-size: 20px;
-  width: 450px;
+	width: 400px; 
 	margin-bottom: 40px;
 }
 
 .page {
   display: flex;
   justify-content: space-between;
-	width: 70vw;
+	width: 1400px;
 	margin: 0 auto;
 }
 
-@media only screen and (max-width: 1420px) {
+@media only screen and (max-width: 900px) {
   .page {
-    width: 100vw;
-    flex-direction: column-reverse;
-  }
-  
-  .page * {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .text_block {
-    width: 90vw;
-  }
-  .text_body {
-    width: 90vw;
+    flex-direction: column;
   }
 }
 
@@ -147,7 +119,7 @@ body {
 }
 
 .video {
-  max-width: 800px;
+	width: 800px;
 	border-radius: 20px;
   animation: right_to_left 1s;
 }
@@ -157,20 +129,16 @@ body {
 	background-color: #D20000;
 	border-radius: 10px;
 	padding: 15px 20px;
+	float: left;
 	text-align: center; 
 	text-decoration: none;
+	text-shadow: none;
   font-size: 18px;
 	transition: all 0.5s ease; 
 }
 
 .order_button:hover {
 	background: #8B0202; 
-}
-
-@media only screen and (max-width: 1420px) {
-  .video {
-    width: 80vw;
-  }
 }
 
 /*Page 2*/
@@ -181,6 +149,10 @@ body {
 
 .page2 .text_block {
   animation: right_to_left 1s;
+}
+
+.page2 .text_body {
+  width: 500px;
 }
 
 .fan_animation {
@@ -207,24 +179,6 @@ body {
   animation: rotate_hue 15s infinite;
   bottom: 230px;
   left: 164px;
-}
-
-@media only screen and (max-width: 1420px) {
-  .page2 {
-    flex-direction: column-reverse;
-  }
-
-  .page2 .text_body {
-    width: 90vw;
-  }
-
-  .fan_animation {
-    display: none;
-  }
-
-  .fan_light {
-    left: 58px;
-  }
 }
 
 /*Page 3*/
