@@ -159,8 +159,8 @@ header {
 .fan_light {
   position: relative;
   animation: rotate_hue 15s infinite;
-  bottom: 226px;
-  left: 168px;
+  bottom: 229px;
+  left: 167px;
 }
 
 /*Page 3*/
