@@ -1,21 +1,27 @@
+
+<!--TODO: Make website responsive-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>SmilePC</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="transitions.css"/>
+  <script src=script.js></script>
 </head>
 
-<body bgcolor= #000;  background= "IMG/359057.jpg">
-	<header>
+<body>
+  <img src="img/decor.png" class="decoration_left"/>
+  <img src="img/decor.png" class="decoration_right"/>
+
+	<header class="desktop_header">
     <div class="header-container">
       <a href="index.html" class="menu-logo">
-        <img src="IMG/logo.png" alt="SmilePC-logo"/>
+        <img src="img/logo.png" alt="SmilePC-logo"/>
       </a>
       <div class="menu-buttons">
-        <a href="#" class="menu-button">Главная</a>
-        <a href="#" class="menu-button">SmilePC</a>
         <a href="#" class="menu-button">Католог</a>
         <a href="#" class="menu-button">Услуги</a>
         <a href="#" class="menu-button">Конфигуратор</a>
@@ -24,22 +30,62 @@
     </div>
 	</header>
 
+  <header class="mobile_header">
+
+  </header> 
+
 	<section class="main">
-    <div class="wrapper">
-      <div class="offer">
-        <h1 class="title">
-            С помощью верстки<br/>
-            я создам ту жизнь, о которой<br/>
-            мечтаю!
-        </h1>					
-        <p class="intro">
-          Мои стремления + настойчивость позволят мне достичь чего угодно.
-          Я не верю в это. Я знаю это на 100%. Меня не остановить!
-        </p>
-        <a href="#" class="main-btn">Двигаться к мечте!</a>
+    <div class="page page1">
+      <div class="text_block">
+        <h1 class="text_title">
+          Ремонт и сборка компьютеров SmilePC
+        </h1>
+        <div class="text_body">
+          <ul>
+            <li>Большой выбор услуг по сборке и ремонту- от серверов
+              до ноутбуков и игровых машин</li>
+            <li>Доступны все пополярные операционные системы: 
+              Windows, GNU/Linux, FreeBSD</li>
+          </ul>
+        </div>
+        <a href="order" class="order_button">Оставить заказ</a>
       </div>
-      <video class="video" src="PC.mp4" muted autoplay="" loop=""></video>
+      <video class="video" src="PC.mp4" muted autoplay loop></video>
     </div>
-	</section> 	
-</body>		
+
+    <div class="page page2">
+      <div class="text_block">
+        <h1 class="text_title">
+          Ваш компьютер будет работать бесперебойно
+        </h1> 
+        <div class="text_body">
+          <ul>
+            <li>
+              Наши сотрудники имеют большой опыт в работе
+              с компьютерами, и смогут правильно подабрать и установить
+              железо под любые нужды
+            </li> 
+            <li>
+              Не нужно волноваться, что ваш компьютер сломается еще раз-
+              мы делаем полный осмотр каждого попадающего к нам компьютера
+              и предупреждаем о потенциальных проблемах
+            </li> 
+          </ul> 
+        </div> 
+      </div> 
+      <div class="fan_animation">
+        <img src="img/fan_frame.png" class="fan_frame"/>
+        <img src="img/fan.png" class="fan"/>
+      </div>
+    </div>
+
+    <div class="page page3">
+      <div class="text_block">
+        <h1 class = "text_title">Lorem Ipsum</h1>
+        <div class=text_body>123 321</div> 
+      </div>
+    </div> 
+
+	</section>
+</body>
 </html>
