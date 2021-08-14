@@ -54,7 +54,7 @@ body {
 
 .header-container {
   display: flex;
-  max-width: 1400px;
+  width: 70vw;
   margin: 0 auto;
 }
 
@@ -192,21 +192,14 @@ body {
 .fan_frame {
   position: absolute;
   transform: translateX(4px) translateY(6px);
-  animation: rotate_hue 15s infinite;
+  animation: rotate_hue 20s infinite;
 }
 
 .fan {
   position: relative;
   left: 60px;
   top: 60px;
-  animation: rotate_image 3s infinite linear;
-}
-
-.fan_light {
-  position: relative;
-  animation: rotate_hue 15s infinite;
-  bottom: 230px;
-  left: 164px;
+  animation: rotate_hue 20s infinite, rotate_image 3s infinite linear;
 }
 
 @media only screen and (max-width: 1420px) {
